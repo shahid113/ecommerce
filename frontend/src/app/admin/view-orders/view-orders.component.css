@@ -1,0 +1,28 @@
+.main{
+    height: 30rem;
+    width:fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+.info table, th{
+    width: 40rem;
+    border: 1px solid black;
+}
+
+.info table{
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.info h2{
+    margin-left:8px;
+}
+
+.print-button{
+    width: 40rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}

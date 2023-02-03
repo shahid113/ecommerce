@@ -1,0 +1,8 @@
+.image-div{
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-group{
+    display: flex;
+}

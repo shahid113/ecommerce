@@ -1,0 +1,57 @@
+<div class="main">
+  <div class="card m-4" style="max-width: 1000px;">
+    <div class="row g-0">
+      <div class="col-md-5">
+            <img [src]="product.product.imagePath" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+            <table class="table">
+                <thead  *ngIf="product">
+                  <tr>
+                    <th scope="col">Product ID</th>
+                    <th scope="col"> {{product.product._id}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>{{product.product.name}}</td>
+                  </tr>
+                  <tr>
+                    <td>Description</td>
+                    <td>{{product.product.description}}</td>
+                  </tr>
+                  <tr>
+                    <td>Price</td>
+                    <td>{{product.product.price | currency:'INR'}}</td>
+                  </tr>
+                  <tr>
+                    <td>Category</td>
+                    <td>{{product.product.category}}</td>
+                  </tr>
+
+                  <tr>
+                    <td>Stock</td>
+                    <td>{{product.product.stock}}</td>
+                  </tr>
+
+                  <tr>
+                    <td>Created By</td>
+                    <td>{{product.product.user}}</td>
+                  </tr>
+
+                  <tr>
+                    <td>Created At</td>
+                    <td>{{product.product.createdAt}}</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
