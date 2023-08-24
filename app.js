@@ -8,8 +8,9 @@ const fileUpload=require('express-fileupload');
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(cors({
-    origin:'http://localhost:4200',
+    origin:'https://ecommerce-project-app.netlify.app',
     credentials: true,
   }));
 
